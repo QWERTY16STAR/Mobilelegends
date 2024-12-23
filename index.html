@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Legends</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background: #444;
+            padding: 0.5rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #00c6ff;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .section {
+            margin: 1rem 0;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        .hero {
+            margin: 1rem 0;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 1rem;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .hero:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        .hero h3 {
+            margin-top: 0;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .hero {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Mobile Legends World</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#heroes">Heroes</a>
+    </nav>
+    <div class="container">
+        <div id="home" class="section">
+            <h2>Mobile Legends Tournaments</h2>
+            <p>Stay updated with the latest Mobile Legends tournaments happening around the globe. Watch top players compete for glory!</p>
+        </div>
+        <div class="section">
+            <h2>Championships</h2>
+            <p>Find information about past and upcoming championships. Don’t miss your chance to witness epic battles!</p>
+        </div>
+        <div id="heroes" class="section">
+            <h2>Heroes</h2>
+            <div class="hero">
+                <h3>Hero 1: Miya</h3>
+                <p>Role: Marksman</p>
+                <p>Abilities: Rain of Arrows, Turbo Stealth, Moonlight Shower.</p>
+            </div>
+            <div class="hero">
+                <h3>Hero 2: Tigreal</h3>
+                <p>Role: Tank</p>
+                <p>Abilities: Implosion, Attack Wave, Sacred Hammer.</p>
+            </div>
+            <div class="hero">
+                <h3>Hero 3: Kagura</h3>
+                <p>Role: Mage</p>
+                <p>Abilities: Seimei Umbrella Open, Yin Yang Overturn, Rasho Umbrella Flee.</p>
+            </div>
+            <div class="hero">
+                <h3>Hero 4: HayaBusa</h3>
+                <p>Role: Assassin</p>
+                <p>Abilities: Shadow Kill, Quad Shadow, Phantom Shuriken.</p>
+            </div>
+            <div class="hero">
+                <h3>Hero 5: Freya</h3>
+                <p>Role: Fighter</p>
+                <p>Abilities: Valkyrie Descent, Spirit Contact, Wings of Faith.</p>
+            </div>
+            <div class="hero">
+                <h3>Hero 6: Nana</h3>
+                <p>Role: Support</p>
+                <p>Abilities: Molina Smooch, Molina Blitz, Magic Boomerang.</p>
+            </div>
+            <div class="hero">
+                <h3>Hero 7: Gusion</h3>
+                <p>Role: Assassin</p>
+                <p>Abilities: Shadowblade Slaughter, Incandescence, Sword Spike.</p>
+            </div>
+            <div class="hero">
+                <h3>Hero 8: Zilong</h3>
+                <p>Role: Fighter</p>
+                <p>Abilities: Spear Flip, Supreme Warrior, Dragon Flurry.</p>
+            </div>
+            <div class="hero">
+                <h3>Hero 9: Layla</h3>
+                <p>Role: Marksman</p>
+                <p>Abilities: Malefic Gun, Void Projectile, Destruction Rush.</p>
+            </div>
+            <div class="hero">
+                <h3>Hero 10: Franco</h3>
+                <p>Role: Tank</p>
+                <p>Abilities: Iron Hook, Fury Shock, Bloody Hunt.</p>
+            </div>
+            <!-- Remaining heroes will follow the same pattern -->
+        </div>
+    </div>
+</body>
+</html>
